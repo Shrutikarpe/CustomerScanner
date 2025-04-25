@@ -1,0 +1,193 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/CustomerScanner/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/CustomerScanner/Actions/CustomerScanner/CustomerDataSet/CustomerDataSet_CreateEntity.action",
+				"Position": "Right",
+				"SystemItem": "Save",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Create_CustomerData_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "CustomerId",
+							"_Name": "CustomerId",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "StreetName",
+							"_Name": "StreetName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "StreetpreName",
+							"_Name": "StreetpreName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "StreetsufName",
+							"_Name": "StreetsufName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Cityname",
+							"_Name": "Cityname",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "District",
+							"_Name": "District",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Postalcode",
+							"_Name": "Postalcode",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Region",
+							"_Name": "Region",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Countycode",
+							"_Name": "Countycode",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BankName",
+							"_Name": "BankName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AccountNumber",
+							"_Name": "AccountNumber",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Ifsc",
+							"_Name": "Ifsc",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Branch",
+							"_Name": "Branch",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Localcurrency",
+							"_Name": "Localcurrency",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Iban",
+							"_Name": "Iban",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "InternationalCurr",
+							"_Name": "InternationalCurr",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "IbanvalidtyDate",
+							"Caption": "IbanvalidtyDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "BusinessPart",
+							"_Name": "BusinessPart",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "IndustrySector",
+							"_Name": "IndustrySector",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Bpcreatoremailid",
+							"_Name": "Bpcreatoremailid",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Bpemail",
+							"_Name": "Bpemail",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Contactno",
+							"_Name": "Contactno",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Aadharno",
+							"_Name": "Aadharno",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Bppan",
+							"_Name": "Bppan",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Gst",
+							"_Name": "Gst",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Approverremailid",
+							"_Name": "Approverremailid",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Sendforapprovalflag",
+							"_Name": "Sendforapprovalflag",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Bpapproved",
+							"_Name": "Bpapproved",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Bprejected",
+							"_Name": "Bprejected",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Remarkofrejection",
+							"_Name": "Remarkofrejection",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Inactiveflag",
+							"_Name": "Inactiveflag",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "CustomerDataSet_Create"
+}

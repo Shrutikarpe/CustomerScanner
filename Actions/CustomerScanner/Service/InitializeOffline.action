@@ -1,0 +1,14 @@
+{
+    "Service": "/CustomerScanner/Services/CustomerScanner.service",
+    "DefiningRequests": [{
+        "Name": "CustomerDataSet",
+        "Query": "CustomerDataSet"
+    }],
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnFailure": "/CustomerScanner/Actions/CustomerScanner/Service/InitializeOfflineFailureMessage.action"
+}

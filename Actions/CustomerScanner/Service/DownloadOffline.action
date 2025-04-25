@@ -1,0 +1,13 @@
+{
+    "Service": "/CustomerScanner/Services/CustomerScanner.service",
+    "DefiningRequests": [{
+        "Name": "CustomerDataSet",
+        "Query": "CustomerDataSet"
+    }],
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/CustomerScanner/Actions/CustomerScanner/Service/SyncFailureMessage.action",
+    "OnSuccess": "/CustomerScanner/Rules/CustomerScanner/ErrorArchive_CheckForSyncError.js"
+}

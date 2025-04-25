@@ -1,0 +1,4 @@
+{
+    "_Type": "Action.Type.Navigation",
+    "PageToOpen": "/CustomerScanner/Pages/CustomerScanner_CustomerDataSet/CustomerDataSet_Detail.page"
+}

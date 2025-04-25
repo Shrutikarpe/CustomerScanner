@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavigateToDetail"
+	},
+	"PageToOpen": "/CustomerScanner/Pages/CustomerScanner_CustomerDataSet/CustomerDataSet_Detail.page",
+	 "EnablePageHeader": true
+}
+

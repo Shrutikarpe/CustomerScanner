@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Message",
+	"_Name": "ShowMessage_NoScan",
+	"Message": "No code was scanned. Please try again.",
+	"Title": "Scan Failed",
+  "IsModal": true,
+  "OKCaption": "OK",
+  "MessageType": "Information"
+}

@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/CustomerScanner/Pages/CustomerScanner_CustomerDataSet/CustomerDataSet_Edit.page",
+    "_Type": "Action.Type.Navigation"
+}

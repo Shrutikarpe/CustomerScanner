@@ -1,0 +1,10 @@
+{
+    "_Type": "Action.Type.OfflineOData.Close",
+    "Service": "/CustomerScanner/Services/CustomerScanner.service",
+    "Force": true,
+    "ActionResult": {
+        "_Name": "close"
+    },
+    "OnSuccess": "/CustomerScanner/Actions/CustomerScanner/Service/CloseOfflineSuccessMessage.action",
+    "OnFailure": "/CustomerScanner/Actions/CustomerScanner/Service/CloseOfflineFailureMessage.action"
+}

@@ -1,0 +1,2 @@
+Pass:
+Generated bundle file /home/user/projects/CustomerScanner/.build/CustomerScanner/.build/uploadBundle.zip

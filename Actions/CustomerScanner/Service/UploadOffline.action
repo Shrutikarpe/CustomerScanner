@@ -1,0 +1,9 @@
+{
+    "Service": "/CustomerScanner/Services/CustomerScanner.service",
+    "_Type": "Action.Type.OfflineOData.Upload",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnSuccess": "/CustomerScanner/Actions/CustomerScanner/Service/DownloadStartedMessage.action",
+    "OnFailure": "/CustomerScanner/Actions/CustomerScanner/Service/SyncFailureMessage.action"
+}

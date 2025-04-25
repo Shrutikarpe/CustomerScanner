@@ -1,0 +1,8 @@
+{
+    "Message": "Upload in progress...",
+    "CompletionMessage": "Sync completed",
+    "CompletionTimeout": 7,
+    "OnSuccess": "/CustomerScanner/Actions/CustomerScanner/Service/UploadOffline.action",
+    "OnFailure": "/CustomerScanner/Actions/CustomerScanner/Service/SyncFailureMessage.action",
+    "_Type": "Action.Type.ProgressBanner"
+}

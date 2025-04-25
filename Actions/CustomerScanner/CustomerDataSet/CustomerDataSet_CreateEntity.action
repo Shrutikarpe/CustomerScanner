@@ -1,0 +1,46 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/CustomerScanner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/CustomerScanner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "CustomerId": "#Control:CustomerId/#Value",
+        "StreetName": "#Control:StreetName/#Value",
+        "StreetpreName": "#Control:StreetpreName/#Value",
+        "StreetsufName": "#Control:StreetsufName/#Value",
+        "Cityname": "#Control:Cityname/#Value",
+        "District": "#Control:District/#Value",
+        "Postalcode": "#Control:Postalcode/#Value",
+        "Region": "#Control:Region/#Value",
+        "Countycode": "#Control:Countycode/#Value",
+        "BankName": "#Control:BankName/#Value",
+        "AccountNumber": "#Control:AccountNumber/#Value",
+        "Ifsc": "#Control:Ifsc/#Value",
+        "Branch": "#Control:Branch/#Value",
+        "Localcurrency": "#Control:Localcurrency/#Value",
+        "Iban": "#Control:Iban/#Value",
+        "InternationalCurr": "#Control:InternationalCurr/#Value",
+        "IbanvalidtyDate": "#Control:IbanvalidtyDate/#Value",
+        "BusinessPart": "#Control:BusinessPart/#Value",
+        "IndustrySector": "#Control:IndustrySector/#Value",
+        "Bpcreatoremailid": "#Control:Bpcreatoremailid/#Value",
+        "Bpemail": "#Control:Bpemail/#Value",
+        "Contactno": "#Control:Contactno/#Value",
+        "Aadharno": "#Control:Aadharno/#Value",
+        "Bppan": "#Control:Bppan/#Value",
+        "Gst": "#Control:Gst/#Value",
+        "Approverremailid": "#Control:Approverremailid/#Value",
+        "Sendforapprovalflag": "#Control:Sendforapprovalflag/#Value",
+        "Bpapproved": "#Control:Bpapproved/#Value",
+        "Bprejected": "#Control:Bprejected/#Value",
+        "Remarkofrejection": "#Control:Remarkofrejection/#Value",
+        "Inactiveflag": "#Control:Inactiveflag/#Value"
+    },
+    "Target": {
+        "EntitySet": "CustomerDataSet",
+        "Service": "/CustomerScanner/Services/CustomerScanner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

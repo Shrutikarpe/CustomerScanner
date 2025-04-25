@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Message",
+	"_Name": "ShowMessage_NotFound",
+	"Message": "No customer found with the scanned ID",
+	"Title": "No Match Found",
+  "IsModal": true,
+  "OKCaption": "OK",
+  "MessageType": "Error"
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="ZCUSTOMER_DATA11_SRV" xml:lang="en" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <Annotation Term="Core.SchemaVersion" String="1.0.0" xmlns="http://docs.oasis-open.org/odata/ns/edm"/>
+            <EntityType Name="CustomerData" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="CustomerId"/>
+                </Key>
+                <Property Name="CustomerId" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Customer" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="StreetName" Type="Edm.String" Nullable="false" MaxLength="35" sap:unicode="false" sap:label="Street" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="StreetpreName" Type="Edm.String" Nullable="false" MaxLength="25" sap:unicode="false" sap:label="STREETPRE NAME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="StreetsufName" Type="Edm.String" Nullable="false" MaxLength="25" sap:unicode="false" sap:label="STREETPRE NAME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Cityname" Type="Edm.String" Nullable="false" MaxLength="25" sap:unicode="false" sap:label="zstring_data" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="District" Type="Edm.String" Nullable="false" MaxLength="25" sap:unicode="false" sap:label="zstring_data" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Postalcode" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Postal Code" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Region" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Region" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Countycode" Type="Edm.String" Nullable="false" MaxLength="35" sap:unicode="false" sap:label="City" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="BankName" Type="Edm.String" Nullable="false" MaxLength="25" sap:unicode="false" sap:label="zstring_data" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="AccountNumber" Type="Edm.String" Nullable="false" MaxLength="25" sap:unicode="false" sap:label="zstring_data" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Ifsc" Type="Edm.String" Nullable="false" MaxLength="25" sap:unicode="false" sap:label="zstring_data" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Branch" Type="Edm.String" Nullable="false" MaxLength="25" sap:unicode="false" sap:label="zstring_data" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Localcurrency" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="Currency" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="currency-code"/>
+                <Property Name="Iban" Type="Edm.String" Nullable="false" MaxLength="25" sap:unicode="false" sap:label="zstring_data" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="InternationalCurr" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="Currency" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="currency-code"/>
+                <Property Name="IbanvalidtyDate" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Created On" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="BusinessPart" Type="Edm.String" Nullable="false" MaxLength="25" sap:unicode="false" sap:label="zstring_data" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="IndustrySector" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="INDUSTRY SECTOR" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Bpcreatoremailid" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="zstring_data" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Bpemail" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="zstring_data" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Contactno" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="zstring_data" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Aadharno" Type="Edm.String" Nullable="false" MaxLength="15" sap:unicode="false" sap:label="zstring_data" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Bppan" Type="Edm.String" Nullable="false" MaxLength="15" sap:unicode="false" sap:label="zstring_data" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Gst" Type="Edm.String" Nullable="false" MaxLength="17" sap:unicode="false" sap:label="zstring_data" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Approverremailid" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="ZMARK" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Sendforapprovalflag" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="ZMARK" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Bpapproved" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="ZMARK" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Bprejected" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="ZMARK" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Remarkofrejection" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="ZMARK" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Inactiveflag" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="ZMARK" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityContainer Name="ZCUSTOMER_DATA11_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="CustomerDataSet" EntityType="ZCUSTOMER_DATA11_SRV.CustomerData" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+            </EntityContainer>
+            <atom:link rel="self" href="https://44403d66trial-dev-customerscanner.cfapps.us10-001.hana.ondemand.com/CustomerScanner/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="latest-version" href="https://44403d66trial-dev-customerscanner.cfapps.us10-001.hana.ondemand.com/CustomerScanner/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

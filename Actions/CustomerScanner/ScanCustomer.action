@@ -1,0 +1,14 @@
+{
+
+    "_Type": "Action.Type.OpenBarcodeScanner",
+    "ActionResult": {
+
+        "_Name": "BarcodeResult"
+
+    },
+
+    "OnFailure": "/CustomerScanner/Actions/ShowMessage_NotFound.action",
+
+    "OnSuccess": "/CustomerScanner/Rules/NavigateToCustomerDetail.js"
+
+}

@@ -1,0 +1,217 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/CustomerScanner/Services/CustomerScanner.service",
+		"EntitySet": "CustomerDataSet",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/CustomerScanner/Actions/CustomerScanner/CustomerDataSet/NavToCustomerDataSet_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/CustomerScanner/Rules/CustomerScanner/CustomerDataSet/CustomerDataSet_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,CustomerData_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{StreetName}",
+						"Subhead": "{CustomerId}",
+						"BodyText": "",
+						"Footnote": "{StreetsufName}",
+						"Description": "{StreetpreName}",
+						"StatusText": "{Cityname}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{District}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "CustomerId",
+							"Value": "{CustomerId}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "StreetName",
+							"Value": "{StreetName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "StreetpreName",
+							"Value": "{StreetpreName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "StreetsufName",
+							"Value": "{StreetsufName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Cityname",
+							"Value": "{Cityname}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "District",
+							"Value": "{District}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Postalcode",
+							"Value": "{Postalcode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Region",
+							"Value": "{Region}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Countycode",
+							"Value": "{Countycode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BankName",
+							"Value": "{BankName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AccountNumber",
+							"Value": "{AccountNumber}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Ifsc",
+							"Value": "{Ifsc}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Branch",
+							"Value": "{Branch}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Localcurrency",
+							"Value": "{Localcurrency}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Iban",
+							"Value": "{Iban}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "InternationalCurr",
+							"Value": "{InternationalCurr}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IbanvalidtyDate",
+							"Value": "{IbanvalidtyDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPart",
+							"Value": "{BusinessPart}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IndustrySector",
+							"Value": "{IndustrySector}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Bpcreatoremailid",
+							"Value": "{Bpcreatoremailid}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Bpemail",
+							"Value": "{Bpemail}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Contactno",
+							"Value": "{Contactno}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Aadharno",
+							"Value": "{Aadharno}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Bppan",
+							"Value": "{Bppan}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Gst",
+							"Value": "{Gst}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Approverremailid",
+							"Value": "{Approverremailid}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Sendforapprovalflag",
+							"Value": "{Sendforapprovalflag}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Bpapproved",
+							"Value": "{Bpapproved}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Bprejected",
+							"Value": "{Bprejected}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Remarkofrejection",
+							"Value": "{Remarkofrejection}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Inactiveflag",
+							"Value": "{Inactiveflag}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "CustomerDataSet_Detail"
+}
