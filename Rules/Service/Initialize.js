@@ -1,3 +1,9 @@
+// import GetUserRole from './GetUserRole';
+// export default function StartupRoleCheck(context) {
+
+//     return GetUserRole(context);
+
+// }
 export default function Initialize(context) {
 
     // Perform pre data initialization task

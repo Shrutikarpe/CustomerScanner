@@ -95,8 +95,10 @@ let customerscanner_rules_application_getclientsupportversions_js = __webpack_re
 let customerscanner_rules_application_getclientversion_js = __webpack_require__(/*! ./CustomerScanner/Rules/Application/GetClientVersion.js */ "./build.definitions/CustomerScanner/Rules/Application/GetClientVersion.js")
 let customerscanner_rules_application_onwillupdate_js = __webpack_require__(/*! ./CustomerScanner/Rules/Application/OnWillUpdate.js */ "./build.definitions/CustomerScanner/Rules/Application/OnWillUpdate.js")
 let customerscanner_rules_application_resetappsettingsandlogout_js = __webpack_require__(/*! ./CustomerScanner/Rules/Application/ResetAppSettingsAndLogout.js */ "./build.definitions/CustomerScanner/Rules/Application/ResetAppSettingsAndLogout.js")
+let customerscanner_rules_clientdata_js = __webpack_require__(/*! ./CustomerScanner/Rules/ClientData.js */ "./build.definitions/CustomerScanner/Rules/ClientData.js")
 let customerscanner_rules_customerscanner_customerdataset_customerdataset_deleteconfirmation_js = __webpack_require__(/*! ./CustomerScanner/Rules/CustomerScanner/CustomerDataSet/CustomerDataSet_DeleteConfirmation.js */ "./build.definitions/CustomerScanner/Rules/CustomerScanner/CustomerDataSet/CustomerDataSet_DeleteConfirmation.js")
 let customerscanner_rules_customerscanner_errorarchive_checkforsyncerror_js = __webpack_require__(/*! ./CustomerScanner/Rules/CustomerScanner/ErrorArchive_CheckForSyncError.js */ "./build.definitions/CustomerScanner/Rules/CustomerScanner/ErrorArchive_CheckForSyncError.js")
+let customerscanner_rules_getuserrole_js = __webpack_require__(/*! ./CustomerScanner/Rules/GetUserRole.js */ "./build.definitions/CustomerScanner/Rules/GetUserRole.js")
 let customerscanner_rules_logging_loglevels_js = __webpack_require__(/*! ./CustomerScanner/Rules/Logging/LogLevels.js */ "./build.definitions/CustomerScanner/Rules/Logging/LogLevels.js")
 let customerscanner_rules_logging_settracecategories_js = __webpack_require__(/*! ./CustomerScanner/Rules/Logging/SetTraceCategories.js */ "./build.definitions/CustomerScanner/Rules/Logging/SetTraceCategories.js")
 let customerscanner_rules_logging_setuserloglevel_js = __webpack_require__(/*! ./CustomerScanner/Rules/Logging/SetUserLogLevel.js */ "./build.definitions/CustomerScanner/Rules/Logging/SetUserLogLevel.js")
@@ -193,8 +195,10 @@ module.exports = {
 	customerscanner_rules_application_getclientversion_js : customerscanner_rules_application_getclientversion_js,
 	customerscanner_rules_application_onwillupdate_js : customerscanner_rules_application_onwillupdate_js,
 	customerscanner_rules_application_resetappsettingsandlogout_js : customerscanner_rules_application_resetappsettingsandlogout_js,
+	customerscanner_rules_clientdata_js : customerscanner_rules_clientdata_js,
 	customerscanner_rules_customerscanner_customerdataset_customerdataset_deleteconfirmation_js : customerscanner_rules_customerscanner_customerdataset_customerdataset_deleteconfirmation_js,
 	customerscanner_rules_customerscanner_errorarchive_checkforsyncerror_js : customerscanner_rules_customerscanner_errorarchive_checkforsyncerror_js,
+	customerscanner_rules_getuserrole_js : customerscanner_rules_getuserrole_js,
 	customerscanner_rules_logging_loglevels_js : customerscanner_rules_logging_loglevels_js,
 	customerscanner_rules_logging_settracecategories_js : customerscanner_rules_logging_settracecategories_js,
 	customerscanner_rules_logging_setuserloglevel_js : customerscanner_rules_logging_setuserloglevel_js,
@@ -472,6 +476,18 @@ function ResetAppSettingsAndLogout(clientAPI) {
 
 /***/ }),
 
+/***/ "./build.definitions/CustomerScanner/Rules/ClientData.js":
+/*!***************************************************************!*\
+  !*** ./build.definitions/CustomerScanner/Rules/ClientData.js ***!
+  \***************************************************************/
+/***/ (() => {
+
+// export default {
+//     UserRole: ''
+// };
+
+/***/ }),
+
 /***/ "./build.definitions/CustomerScanner/Rules/CustomerScanner/CustomerDataSet/CustomerDataSet_DeleteConfirmation.js":
 /*!***********************************************************************************************************************!*\
   !*** ./build.definitions/CustomerScanner/Rules/CustomerScanner/CustomerDataSet/CustomerDataSet_DeleteConfirmation.js ***!
@@ -523,6 +539,36 @@ function CheckForSyncError(context) {
     }
   });
 }
+
+/***/ }),
+
+/***/ "./build.definitions/CustomerScanner/Rules/GetUserRole.js":
+/*!****************************************************************!*\
+  !*** ./build.definitions/CustomerScanner/Rules/GetUserRole.js ***!
+  \****************************************************************/
+/***/ (() => {
+
+// import ClientData from './ClientData'; // Import the ClientData.js file
+
+// export default function GetUserRole(context) {
+//     var userRoles = context.getClientData().UserRoles;
+
+//     if (!userRoles) {
+//         userRoles = context.getODataProvider('/CustomerScanner/Services/CustomerScanner.service').getUserRoles();
+//         context.getClientData().UserRoles = userRoles;
+//     }
+
+//     if (userRoles.includes('Admin')) {
+//         ClientData.UserRole = 'Admin';
+//         return 'Admin';
+//     } else if (userRoles.includes('user')) {
+//         ClientData.UserRole = 'user';
+//         return 'user';
+//     } else {
+//         ClientData.UserRole = 'Guest';
+//         return 'Guest';
+//     }
+// }
 
 /***/ }),
 
@@ -870,6 +916,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Initialize)
 /* harmony export */ });
+// import GetUserRole from './GetUserRole';
+// export default function StartupRoleCheck(context) {
+
+//     return GetUserRole(context);
+
+// }
 function Initialize(context) {
   // Perform pre data initialization task
 
@@ -1229,7 +1281,7 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
   \***********************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Name":"SectionedTable0","_Type":"Control.Type.SectionedTable","Sections":[{"Header":{"_Name":"SectionHeader_CustomerScanner","AccessoryType":"None","UseTopPadding":true,"Caption":"CustomerScanner","_Type":"SectionCommon.Type.Header"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Buttons":[{"OnPress":"/CustomerScanner/Actions/CustomerScanner/CustomerDataSet/NavToCustomerDataSet_List.action","Alignment":"Center","Title":"CustomerDataSet","ButtonType":"Text","Semantic":"Tint","_Type":"ButtonTable.Type.Button"},{"_Type":"ButtonTable.Type.Button","_Name":"ScanButton","Title":"Scan Customer","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://camera","ImagePosition":"Leading","FullWidth":true,"Visible":true,"Enabled":true,"OnPress":"/CustomerScanner/Actions/CustomerScanner/ScanCustomer.action"}],"_Name":"SectionButtonTable_CustomerScanner","_Type":"Section.Type.ButtonTable"}]}],"_Name":"Main","_Type":"Page","ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"User Menu","Icon":"sap-icon://customer","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/CustomerScanner/Actions/Application/UserMenuPopover.action","_Type":"Control.Type.ActionBarItem"}],"_Name":"ActionBar1","Caption":"Main","PrefersLargeCaption":true,"_Type":"Control.Type.ActionBar"}}
+module.exports = {"Controls":[{"_Name":"SectionedTable0","_Type":"Control.Type.SectionedTable","FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"Sections":[{"_Name":"DashboardSection","_Type":"Section.Type.ObjectHeader","ObjectHeader":{"_Type":"Control.Type.ObjectHeader","HeadlineText":"Dashboard","SubheadlineText":"Quick Stats","BodyText":"Overview of customer scanning","StatusText":"Live","FootnoteText":"Data updates every scan","DetailImageIsCircular":true,"DetailImage":"sap-icon://activity-individual","Tags":[{"Text":"Scanned Today: 23"},{"Text":"Total Customers: 582"},{"Text":"Pending Sync: 4"}]}},{"Header":{"_Name":"SectionHeader_CustomerScanner","AccessoryType":"None","UseTopPadding":true,"Caption":"📷 Scan Customer","BackgroundColor":"#F5F5F5","_Type":"SectionCommon.Type.Header"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.Text","Text":"Click below to scan a customer QR or barcode.","Style":"Caption","TextAlignment":"Center"}],"Buttons":[{"_Type":"ButtonTable.Type.Button","Title":"View Customer DataSet","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://database","ImagePosition":"Leading","Spacing":"Medium","OnPress":"/CustomerScanner/Actions/CustomerScanner/CustomerDataSet/NavToCustomerDataSet_List.action"},{"_Type":"ButtonTable.Type.Button","_Name":"ScanButton","Title":"Scan Customer","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://camera","ImagePosition":"Leading","FullWidth":true,"Visible":true,"Enabled":true,"Spacing":"Medium","OnPress":"/CustomerScanner/Actions/CustomerScanner/ScanCustomer.action","SemanticColor":"Positive"}],"_Name":"SectionButtonTable_CustomerScanner","_Type":"Section.Type.ButtonTable"}]}],"_Name":"Main","_Type":"Page","ActionBar":{"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Main","PrefersLargeCaption":true,"Items":[{"_Name":"ActionBarItem0","_Type":"Control.Type.ActionBarItem","Caption":"User Menu","Icon":"sap-icon://employee","Position":"Right","IsIconCircular":true,"Visible":true,"OnPress":"/CustomerScanner/Actions/Application/UserMenuPopover.action"}]},"OnPress":{"/CustomerScanner/Actions/CustomerScanner/ScanCustomer.action":{"SuccessMessage":"Customer scanned successfully!","ErrorMessage":"Scanning failed. Please try again."}},"Responsive":{"Small":{"Visibility":"Visible","FullWidth":true},"Large":{"Visibility":"Visible","FullWidth":false}}}
 
 /***/ }),
 
